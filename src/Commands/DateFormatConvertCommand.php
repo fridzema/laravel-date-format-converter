@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Fridzema\DateFormatConvert\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class DateFormatConvertCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-date-format-converter';
 
     public $description = 'My command';
 
