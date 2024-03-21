@@ -1,6 +1,5 @@
 <?php
 
-
 use Fridzema\DateFormatConverter\DateFormatConverter;
 
 it('converts JavaScript date formats to PHP date formats', function () {

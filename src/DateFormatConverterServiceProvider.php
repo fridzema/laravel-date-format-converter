@@ -4,7 +4,6 @@ namespace Fridzema\DateFormatConverter;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Fridzema\DateFormatConverter\Commands\DateFormatConverterCommand;
 
 class DateFormatConverterServiceProvider extends PackageServiceProvider
 {
