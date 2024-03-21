@@ -36,13 +36,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Fridzema\\DateFormatConvert\\": "src/",
-            "Fridzema\\DateFormatConvert\\Database\\Factories\\": "database/factories/"
+            "Fridzema\\DateFormatConverter\\": "src/",
+            "Fridzema\\DateFormatConverter\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Fridzema\\DateFormatConvert\\Tests\\": "tests/",
+            "Fridzema\\DateFormatConverter\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -74,10 +74,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Fridzema\\DateFormatConvert\\DateFormatConvertServiceProvider"
+                "Fridzema\\DateFormatConverter\\DateFormatConverterServiceProvider"
             ],
             "aliases": {
-                "DateFormatConvert": "Fridzema\\DateFormatConvert\\Facades\\DateFormatConvert"
+                "DateFormatConverter": "Fridzema\\DateFormatConverter\\Facades\\DateFormatConverter"
             }
         }
     },

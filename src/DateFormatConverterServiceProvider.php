@@ -1,12 +1,12 @@
 <?php
 
-namespace Fridzema\DateFormatConvert;
+namespace Fridzema\DateFormatConverter;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Fridzema\DateFormatConvert\Commands\DateFormatConvertCommand;
+use Fridzema\DateFormatConverter\Commands\DateFormatConverterCommand;
 
-class DateFormatConvertServiceProvider extends PackageServiceProvider
+class DateFormatConverterServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {

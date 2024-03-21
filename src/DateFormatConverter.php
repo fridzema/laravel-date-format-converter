@@ -1,8 +1,8 @@
 <?php
 
-namespace Fridzema\DateFormatConvert;
+namespace Fridzema\DateFormatConverter;
 
-class DateFormatConvert
+class DateFormatConverter
 {
     private static array $jsToPhpMapping = [];
     private static array $phpToJsMapping = [];

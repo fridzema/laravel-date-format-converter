@@ -1,10 +1,10 @@
 <?php
 
-namespace Fridzema\DateFormatConvert\Tests;
+namespace Fridzema\DateFormatConverter\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Fridzema\DateFormatConvert\DateFormatConvertServiceProvider;
+use Fridzema\DateFormatConverter\DateFormatConverterServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Fridzema\\DateFormatConvert\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Fridzema\\DateFormatConverter\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            DateFormatConvertServiceProvider::class,
+            DateFormatConverterServiceProvider::class,
         ];
     }
 

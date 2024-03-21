@@ -52,8 +52,8 @@ php artisan vendor:publish --tag="laravel-date-format-converter-views"
 ## Usage
 
 ```php
-$dateFormatConvert = new Fridzema\DateFormatConvert();
-echo $dateFormatConvert->echoPhrase('Hello, Fridzema!');
+$DateFormatConverter = new Fridzema\DateFormatConverter();
+echo $DateFormatConverter->echoPhrase('Hello, Fridzema!');
 ```
 
 ## Testing

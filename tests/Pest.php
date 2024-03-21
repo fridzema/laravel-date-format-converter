@@ -1,5 +1,5 @@
 <?php
 
-use Fridzema\DateFormatConvert\Tests\TestCase;
+use Fridzema\DateFormatConverter\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);
