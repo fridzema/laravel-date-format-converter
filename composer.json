@@ -4,14 +4,16 @@
     "keywords": [
         "Robert Fridzema",
         "laravel",
-        "laravel-date-format-converter"
+        "laravel-date-format-converter",
+        "date",
+        "format"
     ],
     "homepage": "https://github.com/fridzema/laravel-date-format-converter",
     "license": "MIT",
     "authors": [
         {
             "name": "Robert Fridzema",
-            "email": "fridzema@volkers.nl",
+            "email": "fridzema@gmail.com",
             "role": "Developer"
         }
     ],
