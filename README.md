@@ -36,7 +36,7 @@ php artisan vendor:publish --tag="laravel-date-format-converter-config"
 ## Usage
 
 ```php
-$DateFormatConverter = new Fridzema\DateFormatConverter();
+$dateFormatConverter = new Fridzema\DateFormatConverter();
 
 echo DateFormatConverter::convertPhpFormatToJs('Y-m-d');
 echo DateFormatConverter::convertJsFormatToPhp('YYYY-MM-DD');
