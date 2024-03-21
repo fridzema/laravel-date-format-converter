@@ -5,15 +5,19 @@
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/fridzema/laravel-date-format-converter/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/fridzema/laravel-date-format-converter/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/fridzema/laravel-date-format-converter.svg?style=flat-square)](https://packagist.org/packages/fridzema/laravel-date-format-converter)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Really simple package to convert js date format to php date format and the other way around.
 
-## Support us
+```php
+    use Fridzema\DateFormatConverter\DateFormatConverter;
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/laravel-date-format-converter.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/laravel-date-format-converter)
+    it('converts JavaScript date formats to PHP date formats', function () {
+        expect(DateFormatConverter::convertJsFormatToPhp('YYYY-MM-DD'))->toEqual('Y-m-d');
+    });
 
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+    it('converts PHP date formats to JavaScript date formats', function () {
+        expect(DateFormatConverter::convertPhpFormatToJs('Y-m-d'))->toEqual('YYYY-MM-DD');
+    });
+```
 
 ## Installation
 
@@ -23,37 +27,19 @@ You can install the package via composer:
 composer require fridzema/laravel-date-format-converter
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="laravel-date-format-converter-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag="laravel-date-format-converter-config"
 ```
 
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="laravel-date-format-converter-views"
-```
-
 ## Usage
 
 ```php
 $DateFormatConverter = new Fridzema\DateFormatConverter();
-echo $DateFormatConverter->echoPhrase('Hello, Fridzema!');
+
+echo DateFormatConverter::convertPhpFormatToJs('Y-m-d');
+echo DateFormatConverter::convertJsFormatToPhp('YYYY-MM-DD');
 ```
 
 ## Testing
